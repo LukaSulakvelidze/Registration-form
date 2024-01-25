@@ -1,11 +1,11 @@
 body {
   display: flex;
   justify-content: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   height: 100vh;
   margin: 0;
   background-image: url(./Background_Images/background_mobile.png);
-  background-color: #FF7979;
+  background-color: #ff7979;
 }
 
 .container {
@@ -50,7 +50,7 @@ body {
   cursor: pointer;
   border-radius: 10px;
   box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
-  background-color: #5E54A4;
+  background-color: #5e54a4;
 }
 
 .purple_cont h1 {
@@ -62,24 +62,16 @@ body {
   color: white;
 }
 
-.purple_cont span {
-  font-weight: 700;
-}
-
 form {
-  /* width: 100%; */
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
   margin-bottom: 68px;
+  padding: 24px 0;
   border-radius: 10px;
   box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
   background-color: white;
-}
-
-.first_input {
-  margin-top: 24px;
 }
 
 input {
@@ -90,10 +82,21 @@ input {
   border-radius: 5px;
   padding-left: 19px;
   letter-spacing: 0.25px;
-  /* margin-top: 24px; */
-  border: 1px solid #DEDEDE;
-  outline-color: #5E54A4;
-  color: #3D3B48;
+  border: 1px solid #dedede;
+  outline-color: #5e54a4;
+  color: #3d3b48;
+}
+
+form > span {
+  display: none;
+  align-self: flex-end;
+  font-size: 11px;
+  font-family: Poppins;
+  font-weight: 500;
+  text-align: right;
+  font-style: italic;
+  margin: -10px 10% 0 0;
+  color: #ff7979;
 }
 
 button {
@@ -109,7 +112,7 @@ button {
   border-radius: 5px;
   box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
   color: white;
-  background-color: #38CC8B;
+  background-color: #38cc8b;
 }
 
 form p {
@@ -117,13 +120,13 @@ form p {
   font-weight: 500;
   text-align: center;
   width: 70%;
-  margin: -8px 0 24px;
-  color: #BAB7D4;
+  margin: -8px 0 0;
+  color: #bab7d4;
 }
 
-form span {
+p span {
   font-weight: 700;
-  color: #FF7979;
+  color: #ff7979;
 }
 
 @media (min-width: 768px) {
@@ -131,7 +134,7 @@ form span {
     margin: 121px 0 0;
     width: 691px;
   }
-} 
+}
 
 @media (min-width: 1440px) {
   body {
@@ -176,23 +179,20 @@ form span {
   }
 
   form {
-    margin: 0;
     gap: 20px;
-  }
-
-  .first_input {
-    margin-top: 40px;
+    margin: 0;
+    padding: 40px 0;
   }
 
   input {
     width: 438px;
   }
 
-  button {
-    width: 460px;
+  form > span {
+    margin: -16px 40px 0 0;
   }
 
-  form p {
-    margin: 0 0 40px;
+  button {
+    width: 460px;
   }
 }

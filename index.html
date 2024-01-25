@@ -21,14 +21,18 @@
 
     <div class="container_item2">
       <div class="purple_cont">
-        <h1> <span>Try it free 7 days </span>then $20/mo. thereafter</h1>
+        <h1> <b>Try it free 7 days </b> then $20/mo. thereafter</h1>
       </div>
       <form>
-        <input class="first_input" type="text" placeholder="First Name">
-        <input type="text" placeholder="Last Name">
-        <input type="email" placeholder="Email Address">
-        <input type="password" placeholder="Password">
-        <button>
+        <input id="input1" type="text" placeholder="First Name">
+        <span class="error_text"> First Name cannot be empty </span>
+        <input id="input2" type="text" placeholder="Last Name">
+        <span class="error_text"> Last Name cannot be empty </span>
+        <input id="input3" type="email" placeholder="Email Address">
+        <span class="error_text"> Looks like this is not an email </span>
+        <input id="input4" type="password" placeholder="Password">
+        <span class="error_text"> Looks like this is not an email </span>
+        <button type="button" id="button">
           CLAIM YOUR FREE TRIAL
         </button>
         <p>
@@ -37,6 +41,8 @@
       </form>
     </div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
